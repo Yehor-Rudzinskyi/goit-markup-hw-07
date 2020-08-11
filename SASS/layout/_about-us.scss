@@ -1,0 +1,73 @@
+.about-us {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about-us-list {
+  display: flex;
+}
+
+.about-us-list-item {
+  width: calc((100% - 90px) / 4);
+}
+
+.about-us-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us-block {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--secondary-background-color);
+}
+
+.about-us-icons {
+  width: 70px;
+  height: 70px;
+}
+
+/* проба псевдо
+
+.about-us-list-item::before {
+  content: '';
+  display: block;
+  max-width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-background-color);
+} */
+
+/* .about-us-list-item:nth-child(1)::before {
+  background-image: url(../images/about_us_logo/antenna.svg);
+}
+
+.about-us-list-item:nth-child(2)::before {
+  background-image: url(../images/about_us_logo/clock.svg);
+}
+
+.about-us-list-item:nth-child(3)::before {
+  background-image: url(../images/about_us_logo/diagram.svg);
+}
+
+.about-us-list-item:nth-child(4)::before {
+  background-image: url(../images/about_us_logo/astronaut.svg);
+} */
+
+.about-us-subtitle {
+  margin-bottom: 10px;
+}
+
+.about-us-description {
+  margin: 0;
+
+  color: var(--secomdary-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}

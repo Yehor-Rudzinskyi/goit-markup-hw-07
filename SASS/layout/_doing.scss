@@ -1,0 +1,35 @@
+.doing {
+  padding-bottom: 94px;
+}
+
+.doing-list {
+  display: flex;
+}
+
+.doing-subtitle {
+  margin-bottom: 0px;
+  color: var(--text-dark-theme-color);
+}
+
+.doing-list-item {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+}
+
+.doing-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.doing-img {
+  display: block;
+}
+
+.doing-subtitle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}

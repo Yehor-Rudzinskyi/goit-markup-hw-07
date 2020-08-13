@@ -1,7 +1,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--footer-background-color);
+  background-color: $footer-background-color;
 }
 
 .footer-block {
@@ -21,7 +21,7 @@
 }
 
 .footer-address-block > a {
-  color: var(--text-dark-theme-color);
+  color: $text-dark-theme-color;
 }
 
 .logo-f {
@@ -47,6 +47,10 @@
 .footer-social-list-item {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-social-link {
@@ -57,29 +61,25 @@
   align-items: center;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent);
-}
-
-.footer-social-list-item:not(:last-child) {
-  margin-right: 10px;
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
 }
 
 .join-icons {
-  fill: var(--text-dark-theme-color);
+  fill: $text-dark-theme-color;
 }
 
 .street {
-  color: var(--text-dark-theme-color);
+  color: $text-dark-theme-color;
 }
 
 .footer-subtitle {
   display: block;
   margin-bottom: 20px;
-  color: var(--text-dark-theme-color);
+  color: $text-dark-theme-color;
 }
 
 .footer-subtitle-form {
@@ -91,8 +91,8 @@
   padding: 10px 28px;
   align-items: center;
 
-  color: var(--text-dark-theme-color);
-  background-color: var(--accent);
+  color: $text-dark-theme-color;
+  background-color: $accent;
 
   font-weight: bold;
   font-size: 14px;
@@ -125,22 +125,22 @@
   line-height: 0.8;
   letter-spacing: 0.03em;
 
-  background-color: var(--footer-background-color);
+  background-color: $footer-background-color;
   color: rgba(255, 255, 255, 0.6);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
 
-.email-forma:focus {
-  outline: none;
-}
+  &:focus {
+    outline: none;
+  }
 
-.email-forma:focus:valid:not(:placeholder-shown) {
-  border: 1px solid green;
-}
+  &:focus:valid:not(:placeholder-shown) {
+    border: 1px solid green;
+  }
 
-.email-forma:focus:invalid:not(:placeholder-shown) {
-  border: 1px solid red;
+  &:focus:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+  }
 }

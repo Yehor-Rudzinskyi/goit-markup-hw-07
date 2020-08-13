@@ -11,26 +11,20 @@
   margin-bottom: 30px;
 
   border: 1px solid #eeeeee;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-cards-list-item-link:hover,
 .portfolio-cards-list-item-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-cards-list-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-cards-list-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-.portfolio-cards-list-item-link:hover .portfolio-overlay-cards,
-.portfolio-cards-list-item-link:focus .portfolio-overlay-cards {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .portfolio-cards-img {
@@ -59,8 +53,14 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
 
-  color: var(--text-dark-theme-color);
+  color: $text-dark-theme-color;
   background-color: rgba(33, 150, 243, 0.9);
+
+  .portfolio-cards-list-item-link:hover &,
+  .portfolio-cards-list-item-link:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .cards-bottom {
@@ -70,7 +70,7 @@
 .portfolo-subtitle {
   margin-top: 0;
   margin-bottom: 4px;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   font-weight: bold;
   font-size: 18px;
@@ -81,7 +81,7 @@
 .portfolo-subtitle-type {
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--secomdary-text-color);
+  color: $secomdary-text-color;
 
   font-size: 16px;
   line-height: 1.87;

@@ -74,7 +74,7 @@
 .modal-input:focus,
 .modal-textarea:focus {
   outline: none;
-  border: 1px solid var(--accent);
+  border: 1px solid $accent;
 }
 
 .modal-input:focus + .modal-label,
@@ -82,7 +82,7 @@
   left: 16px;
   top: 0;
   transform: translateY(calc(-100% - 4px));
-  color: var(--accent);
+  color: $accent;
 
   font-size: 12px;
   line-height: 0.86;
@@ -98,7 +98,7 @@
 }
 
 .modal-input:focus ~ .modal-label-icons {
-  fill: var(--accent);
+  fill: $accent;
 }
 
 .modal-textarea {
@@ -118,7 +118,7 @@
   letter-spacing: 0.01em;
   outline: none;
 
-  color: var(--secomdary-text-color);
+  color: $secomdary-text-color;
 }
 
 .modal-btn-close {
@@ -142,26 +142,25 @@
 }
 
 .modal-btn-close:hover .modal-icon-close {
-  fill: var(--accent);
+  fill: $accent;
 }
 
 .modal-checkbox-label {
   display: flex;
   align-items: center;
   margin-top: 20px;
-}
 
-.modal-checkbox-label {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   cursor: pointer;
 
-  color: var(--secomdary-text-color);
+  color: $secomdary-text-color;
 }
 
 .modal-checkbox-link {
-  color: var(--accent);
+  color: $accent;
 }
 
 .modal-checkbox-input {
@@ -182,7 +181,7 @@
   width: 16px;
   height: 15px;
 
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid $primary-text-color;
   border-radius: 4px;
   flex-shrink: 0;
 }
@@ -194,7 +193,7 @@
 .modal-checkbox-input:checked + .checkbox-icon {
   border-color: transparent;
   background-image: url(../images/checkbox_icon.svg);
-  background-color: var(--accent);
+  background-color: $accent;
   background-size: contain;
   background-origin: border-box;
 }

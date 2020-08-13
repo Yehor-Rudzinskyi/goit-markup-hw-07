@@ -9,10 +9,10 @@ html {
 }
 
 body {
-  color: var(--primary-text-color);
-  background-color: var(--text-dark-theme-color);
+  color: $primary-text-color;
+  background-color: $text-dark-theme-color;
 
-  font-family: var(--main-font);
+  font-family: $main-font;
   letter-spacing: 0.03em;
 }
 

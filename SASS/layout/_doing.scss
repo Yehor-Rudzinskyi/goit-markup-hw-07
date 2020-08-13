@@ -6,18 +6,13 @@
   display: flex;
 }
 
-.doing-subtitle {
-  margin-bottom: 0px;
-  color: var(--text-dark-theme-color);
-}
-
 .doing-list-item {
   position: relative;
   width: calc((100% - 60px) / 3);
-}
 
-.doing-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .doing-img {
@@ -27,9 +22,14 @@
 .doing-subtitle {
   position: absolute;
   bottom: 0;
+
   width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
+  margin-bottom: 0px;
+
   text-align: center;
+
+  color: $text-dark-theme-color;
   background-color: rgba(47, 48, 58, 0.8);
 }

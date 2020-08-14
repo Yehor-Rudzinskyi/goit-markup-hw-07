@@ -18,9 +18,7 @@
 
   background: #f5f4fa;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include font(16px, 1.62, 500);
   border: 1px solid #f5f4fa;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),

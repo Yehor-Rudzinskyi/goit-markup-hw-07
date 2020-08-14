@@ -32,8 +32,7 @@
 .footer-address-list-item-link {
   color: rgba(255, 255, 255, 0.6);
 
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 1.71);
 }
 
 .footer-social-list {
@@ -95,9 +94,7 @@
   color: $text-dark-theme-color;
   background-color: $accent;
 
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 700);
   letter-spacing: 0.03em;
   text-align: center;
 
@@ -122,8 +119,7 @@
   padding-left: 16px;
   margin-right: 12px;
 
-  font-size: 16px;
-  line-height: 0.8;
+  @include font(16px, 1.25, 400);
   letter-spacing: 0.03em;
 
   background-color: $footer-background-color;

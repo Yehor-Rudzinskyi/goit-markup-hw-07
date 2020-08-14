@@ -39,8 +39,7 @@
 
   color: $secomdary-text-color;
 
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 1.71);
 }
 
 /* проба псевдо

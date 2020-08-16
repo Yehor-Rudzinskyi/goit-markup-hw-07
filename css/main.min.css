@@ -79,23 +79,23 @@ button,
 select {
   text-transform: none;
 }
+button,
 [type='button'],
 [type='reset'],
-[type='submit'],
-button {
+[type='submit'] {
   -webkit-appearance: button;
 }
+button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
 [type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner,
-button::-moz-focus-inner {
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
+button:-moz-focusring,
 [type='button']:-moz-focusring,
 [type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring,
-button:-moz-focusring {
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 fieldset {
@@ -150,26 +150,26 @@ template {
   display: none;
 }
 @font-face {
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   src: local('Raleway Bold'), local('Raleway-Bold'),
-    url(../fonts/raleway-v16-latin-700.woff2) format('woff2'),
-    url(../fonts/raleway-v16-latin-700.woff) format('woff');
+    url('../fonts/raleway-v16-latin-700.woff2') format('woff2'),
+    url('../fonts/raleway-v16-latin-700.woff') format('woff');
 }
-.join-icons,
-.team-social-icons {
+.team-social-icons,
+.join-icons {
   width: 20px;
   height: 20px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.about-us-block,
-.clients-list-item-link,
-.footer-social-link,
 .modal-btn-close,
-.team-social-link {
+.about-us-block,
+.team-social-link,
+.clients-list-item-link,
+.footer-social-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,15 +185,15 @@ html {
   box-sizing: border-box;
 }
 *,
-::after,
-::before {
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 body {
   color: #212121;
   background-color: #fff;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
 img {
@@ -201,10 +201,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+p,
 h1,
 h2,
-h3,
-p {
+h3 {
   padding: 0;
   margin: 0;
 }
@@ -271,9 +271,9 @@ address {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity 0.5s linear;
-  -o-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
+  -webkit-transition: opacity 500ms linear;
+  -o-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
 }
 .modal {
   position: absolute;
@@ -283,10 +283,10 @@ address {
   min-width: 528px;
   text-align: center;
   background-color: #fff;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -308,7 +308,7 @@ address {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
-  outline: 0;
+  outline: none;
   border: 1px solid #2196f3;
 }
 .modal-form-block {
@@ -389,7 +389,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  outline: 0;
+  outline: none;
   color: #757575;
 }
 .modal-textarea::-moz-placeholder {
@@ -397,7 +397,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  outline: 0;
+  outline: none;
   color: #757575;
 }
 .modal-textarea:-ms-input-placeholder {
@@ -405,7 +405,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  outline: 0;
+  outline: none;
   color: #757575;
 }
 .modal-textarea::-ms-input-placeholder {
@@ -413,7 +413,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  outline: 0;
+  outline: none;
   color: #757575;
 }
 .modal-textarea::placeholder {
@@ -421,11 +421,11 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  outline: 0;
+  outline: none;
   color: #757575;
 }
 .modal-textarea:focus {
-  outline: 0;
+  outline: none;
   border: 1px solid #2196f3;
 }
 .modal-btn-close {
@@ -496,7 +496,7 @@ address {
   margin-left: 5px;
 }
 .main-title {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -505,7 +505,7 @@ address {
   text-align: center;
 }
 .main-subtitle {
-  margin-top: 0;
+  margin-top: 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -539,7 +539,7 @@ address {
   margin-right: 85px;
   color: #000;
   font-family: Raleway;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -576,8 +576,8 @@ address {
   background-color: #2196f3;
   border-radius: 2px;
 }
-.navigation-list-link:focus,
-.navigation-list-link:hover {
+.navigation-list-link:hover,
+.navigation-list-link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -610,10 +610,10 @@ address {
   -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-header-link:focus,
-.address-header-link:focus .header-icons,
 .address-header-link:hover,
-.address-header-link:hover .header-icons {
+.address-header-link:focus,
+.address-header-link:hover .header-icons,
+.address-header-link:focus .header-icons {
   fill: #2196f3;
   color: #2196f3;
 }
@@ -661,8 +661,8 @@ address {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  -webkit-animation: zoomtitle 1s linear;
-  animation: zoomtitle 1s linear;
+  -webkit-animation: zoomtitle 1000ms linear;
+  animation: zoomtitle 1000ms linear;
 }
 .main-heading-order-button {
   display: block;
@@ -678,10 +678,10 @@ address {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  outline: 0;
+  outline: none;
 }
 .about-us {
   padding-top: 94px;
@@ -742,7 +742,7 @@ address {
   width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   text-align: center;
   color: #fff;
   background-color: rgba(47, 48, 58, 0.8);
@@ -759,11 +759,11 @@ address {
 }
 .team-list-item {
   width: calc((100% - 90px) / 4);
-  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
-    0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-item:not(:last-child) {
   margin-right: 30px;
@@ -773,7 +773,7 @@ address {
   background-color: #fff;
 }
 .team-name {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -781,7 +781,7 @@ address {
   text-align: center;
 }
 .team-profession {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 16px;
   color: #757575;
   font-weight: 400;
@@ -798,12 +798,12 @@ address {
   -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-social-link:focus,
-.team-social-link:hover {
+.team-social-link:hover,
+.team-social-link:focus {
   background-color: #2196f3;
 }
-.team-social-link:focus .team-social-icons,
-.team-social-link:hover .team-social-icons {
+.team-social-link:hover .team-social-icons,
+.team-social-link:focus .team-social-icons {
   fill: #fff;
 }
 .team-social-list {
@@ -835,12 +835,12 @@ address {
   -o-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list-item-link:focus,
-.clients-list-item-link:hover {
+.clients-list-item-link:hover,
+.clients-list-item-link:focus {
   border: 1px solid #2196f3;
 }
-.clients-list-item-link:focus .clients-icons,
-.clients-list-item-link:hover .clients-icons {
+.clients-list-item-link:hover .clients-icons,
+.clients-list-item-link:focus .clients-icons {
   fill: #2196f3;
 }
 .clients-icons {
@@ -877,7 +877,7 @@ address {
   color: #fff;
 }
 .logo-f {
-  margin-right: 0;
+  margin-right: 0px;
   margin-bottom: 20px;
 }
 .footer-address-list-item-link {
@@ -909,8 +909,8 @@ address {
   -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-link:focus,
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #2196f3;
 }
 .join-icons {
@@ -942,12 +942,12 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  outline: 0;
+  outline: none;
 }
 .footer-icon-plane {
   margin-left: 10px;
@@ -969,12 +969,12 @@ address {
   background-color: #2f303a;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
 .email-forma:focus {
-  outline: 0;
+  outline: none;
 }
 .email-forma:focus:valid:not(:placeholder-shown) {
   border: 1px solid green;

@@ -15,16 +15,6 @@
   text-align: center;
 }
 
-@keyframes zoomtitle {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .main-heading {
   margin-top: 0;
   margin-bottom: 30px;

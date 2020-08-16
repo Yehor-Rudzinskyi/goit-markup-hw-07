@@ -1,0 +1,19 @@
+@keyframes zoomtitle {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes skale {
+  from {
+    opacity: 1;
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
